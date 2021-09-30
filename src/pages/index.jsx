@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Footer } from "src/Components/Footer";
-// import { Header } from "src/Components/Header";
+import { Header } from "src/Components/Header";
+import { Main } from "src/Components/Main";
 
 export default function Home() {
 	return (
@@ -9,11 +10,9 @@ export default function Home() {
 				<title>Create Next App</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-				<div>
-					<h1>About</h1>
-					<div></div>
-				</div>
+			<Header />
+			<main className="flex flex-col items-center justify-center w-full flex-1 px-10 text-center">
+				<Main />
 			</main>
 			<Footer />
 		</div>
