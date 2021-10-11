@@ -8,10 +8,6 @@ const navigation = [
 	{ href: "/blog", name: "Blog", current: false },
 ];
 
-function classNames(...classes) {
-	return classes.filter(Boolean).join(" ");
-}
-
 export function Header() {
 	return (
 		<div className="flex justify-between items-center w-full border-[1px]  border-black py-2 px-4">
@@ -29,34 +25,6 @@ export function Header() {
 			<div className="flex md:hidden">
 				<AiOutlineMenu className="text-2xl" />
 			</div>
-			<Menu>
-				<Menu.Button>More</Menu.Button>
-				<Menu.Items>
-					<Menu.Item>
-						{({ active }) => (
-							<a
-								className={`${active && "bg-blue-500"}`}
-								href="/account-settings"
-							>
-								Account settings
-							</a>
-						)}
-					</Menu.Item>
-					<Menu.Item>
-						{({ active }) => (
-							<a
-								className={`${active && "bg-blue-500"}`}
-								href="/account-settings"
-							>
-								Documentation
-							</a>
-						)}
-					</Menu.Item>
-					<Menu.Item disabled>
-						<span className="opacity-75">Invite a friend (coming soon!)</span>
-					</Menu.Item>
-				</Menu.Items>
-			</Menu>
 		</div>
 	);
 }
