@@ -3,6 +3,7 @@ import { Footer } from "src/Components/Footer";
 import { Header } from "src/Components/Header";
 import { HeadLine } from "src/Components/HeadLine";
 import { Profile } from "src/Components/Profile";
+import "node_modules/papercss/dist/paper.min.css";
 
 export default function Home() {
 	return (
